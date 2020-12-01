@@ -1,3 +1,5 @@
+import java.math.BigDecimal;
+import java.math.BigInteger;
 
 public class Variables {
 	
@@ -5,7 +7,61 @@ public class Variables {
 
 	public static void main(String[] args) {
 
+		float f = 3.14f;
+		float f2 = (float)3.14;
+		
+		double d = 3.14;
+		
+		f = 0.1234567890123456789f;
+		
+		System.out.println(f);
+		
+		d = 0.1234567890123456789;
+		System.out.println(d);
+		
+		double total = 0;
+		byte i = 0;
+		
+		while(i < 100) {
+			total = total + 0.2;
+			i++;
+		}
+		// 100 * 0.2 = 20
+		// 0.1 + 0.2 === 0.3
+		System.out.println("total = " + total);
+		System.out.println("total = " + (100 * 0.2));
+		
+		BigDecimal bd = new BigDecimal("0");
+		System.out.println("bd = " + bd);
+		
+		i = 0;
+		
+		while(i < 100) {
+			bd = bd.add( new BigDecimal("0.2") ); // bd + 0.2
+			i++;
+		}
+		
+		System.out.println("bd = " + bd);
+		
+		BigDecimal bd1 = new BigDecimal("123456789.123456789");
+		BigDecimal bd2 = new BigDecimal("987654321.987654321");
+		
+		BigDecimal bdTotal = BigDecimal.ZERO;
+		
+		bdTotal = bd1.multiply(bd2);
+		bdTotal = bd1.subtract(bd2);
+		bdTotal = bd1.divide(new BigDecimal("2"));
+		
+		bdTotal = bd1.pow(2);
+		
+		System.out.println("bdTotal = " + bdTotal);
+		
+		double res = 1.23456;
+		System.out.println( "res  = " + String.format("%.3f", res)  );
+		System.out.println( "res  = " + res);
+		/*
 		final byte a = 127; // Byte
+		
 		int i = 7; // Integer
 		short sh = 9;
 		 
@@ -45,6 +101,7 @@ public class Variables {
 		
 		// a = 7; !!!
 		System.out.println("Hello Java again!" + a);
+		*/
 	}
 
 }
