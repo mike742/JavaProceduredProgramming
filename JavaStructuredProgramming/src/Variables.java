@@ -6,7 +6,7 @@ public class Variables {
 	public int sg = 22;
 
 	public static void main(String[] args) {
-
+		/*
 		float f = 3.14f;
 		float f2 = (float)3.14;
 		
@@ -59,12 +59,13 @@ public class Variables {
 		double res = 1.23456;
 		System.out.println( "res  = " + String.format("%.3f", res)  );
 		System.out.println( "res  = " + res);
-		/*
+		
+	
 		final byte a = 127; // Byte
 		
 		int i = 7; // Integer
 		short sh = 9;
-		 
+		 */
 		
 		// 1 0 1 0  1 1 0 0 
 		System.out.println( "size of byte is " + Byte.SIZE 
@@ -84,7 +85,7 @@ public class Variables {
 
 		System.out.println( "size of char is " + Character.SIZE  
 				+ " min = " + Character.MIN_VALUE + " max " + Character.MAX_VALUE);	
-		
+		/*
 		if(a > 4) {
 			
 			int b = 7;
