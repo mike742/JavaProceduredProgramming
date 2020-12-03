@@ -18,10 +18,10 @@ public class LoopsMethods {
 	
 	public static void main(String[] args) {
 	
-		float f = (float)3.14;
-		double d = 3.14;
+		float f = 3.14f;
+		double d = 3.14d;
 		
-		byte n1 = 4;
+		byte n1 = 4; // 4 - int
 		byte n2 = 5;
 		System.out.println(n1 + n2);
 		
