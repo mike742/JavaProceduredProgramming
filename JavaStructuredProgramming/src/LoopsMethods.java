@@ -15,9 +15,80 @@ public class LoopsMethods {
 
 		System.out.println(a + b);
 	}		
+
+	public static int add(int a, int b) {
+
+		return a + b;
+	}		
+	
+	public static void drawRectangle(byte w, byte h) {
+		
+		System.out.print("drawRectangle(byte, byte) \n");
+		
+		for(byte row = 0; row < h; row++) {
+			for(byte col = 0; col < w; ++col) {
+				System.out.print("*");
+			}
+			System.out.print("\n");
+		}
+	}
+	
+	public static void drawRectangle(int w, int h) {
+		
+		System.out.print("drawRectangle(int, int) \n");
+		
+		for(byte row = 0; row < h; row++) {
+			for(byte col = 0; col < w; ++col) {
+				System.out.print("*");
+			}
+			System.out.print("\n");
+		}
+	}	
+
+	
+	public static void drawRectangle(int w, int h, char c) {
+		
+		System.out.print("drawRectangle(int, int, char) \n");
+		
+		for(byte row = 0; row < h; row++) {
+			for(byte col = 0; col < w; ++col) {
+				System.out.print( c );
+			}
+			System.out.print("\n");
+		}
+	}	
+	
+	public static void pr(String str) {
+		System.out.print(str);
+	}
+
+	public static void prl(String str) {
+		System.out.print(str + "\n");
+	}
+	
+	public static void prl(int input) {
+		System.out.print(input + "\n");
+	}	
+	
+	public static void prl(byte input) {
+		System.out.print(input + "\n");
+	}
 	
 	public static void main(String[] args) {
 	
+		int r = add(11, 22);
+		byte b = 77;
+		
+		prl( b );
+		prl( r );
+		
+		pr( add(11, 22) + "\n" );
+		
+		drawRectangle(20, 5);
+		
+		drawRectangle(22, 7, '+');
+		
+		
 		float f = 3.14f;
 		double d = 3.14d;
 		
