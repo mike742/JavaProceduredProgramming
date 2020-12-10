@@ -75,7 +75,7 @@ public class LoopsMethods {
 	}
 	
 	public static void main(String[] args) {
-	
+		
 		int r = add(11, 22);
 		byte b = 77;
 		
