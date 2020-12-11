@@ -25,7 +25,6 @@ public class StoppingDistance {
 	public static double getInput(String title, Scanner sc) {
 		double res = 0;
 		String input = "";
-
 		
 		do {
 			pr("Enter your " + title + ": ");
@@ -39,7 +38,6 @@ public class StoppingDistance {
 			}
 		}
 		while(!checkDouble(input));
-		
 
 		return res;
 	}
