@@ -49,6 +49,29 @@ public class UserInputs {
 	
 	public static void main(String[] args) {
 		
+		
+		System.out.println("Enter Number of sides");
+		Scanner sc = new Scanner(System.in);
+		int sides = sc.nextInt(); //finds how many lines
+		int num = 0;
+		
+		for (int i = 0; i < sides; i++) //nested for loop for quick code
+		{
+			// num++; //makes sure to run
+			for (int j = 0; j<i; j++) {
+			System.out.print("*");	
+			}
+			System.out.println();
+		}
+		
+		
+		
+		
+		
+		
+		
+		/*
+		
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("Enter a number: ");
@@ -63,7 +86,7 @@ public class UserInputs {
 			double d = Double.parseDouble(input);
 			System.out.println( " double d  = " + d );
 		}
-		
+		*/
 		/*
 		if (checkInt(input)) {
 			System.out.println(" day is  " + Integer.parseInt(input)) ;
@@ -75,7 +98,8 @@ public class UserInputs {
 		System.out.println("Math.PI " + Math.PI);
 		*/		
 		
-		System.out.println("bye! Have a nice day!");
+		System.out.println("Bye! Have a nice day!");
+
 	}
 
 }

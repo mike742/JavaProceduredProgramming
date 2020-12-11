@@ -63,7 +63,7 @@ public class LoopsMethods {
 	}
 
 	public static void prl(String str) {
-		System.out.print(str + "\n");
+		System.out.println(str + "\n");
 	}
 	
 	public static void prl(int input) {
